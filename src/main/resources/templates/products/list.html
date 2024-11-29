@@ -31,7 +31,7 @@
 				<td th:text="${product.description}"></td>
 				<td>
 					<a th:href="@{/products/edit(id=${product.id})}" class="btn btn-outline-warning btn-sm"> Edit </a>
-					<a th:href="@{/products/}" onclick="return confirm('Are you sure to delete this register?')" class="btn btn-outline-danger btn-sm"> Delete </a>
+					<a th:href="@{/products/delete(id=${product.id})}" onclick="return confirm('Are you sure to delete this register?')" class="btn btn-outline-danger btn-sm"> Delete </a>
 				</td>
 			</tr>
 		</tbody>
